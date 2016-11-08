@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		519A9E041DC82E3200D861E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519A9E021DC82E3200D861E0 /* Main.storyboard */; };
+		519A9E061DC82E3200D861E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 519A9E051DC82E3200D861E0 /* Assets.xcassets */; };
+		519A9E091DC82E3200D861E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519A9E071DC82E3200D861E0 /* LaunchScreen.storyboard */; };
+		519A9E121DC82FDA00D861E0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 519A9E101DC82FDA00D861E0 /* Info.plist */; };
+		519A9E131DC82FDA00D861E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 519A9E111DC82FDA00D861E0 /* main.m */; };
+		519A9E1A1DC8301100D861E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 519A9E161DC8301100D861E0 /* ViewController.m */; };
+		519A9E1B1DC8301100D861E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 519A9E191DC8301100D861E0 /* AppDelegate.m */; };
+		519A9E251DC836D100D861E0 /* CCAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 519A9E211DC836D100D861E0 /* CCAccountManager.m */; };
+		519A9E2B1DC8435400D861E0 /* libencryption.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 519A9E2A1DC8435400D861E0 /* libencryption.a */; };
+		519A9E2F1DC8474700D861E0 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 519A9E2E1DC8474700D861E0 /* OpenUDID.m */; };
+		519A9E311DC8687200D861E0 /* ApiConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 519A9E301DC8687200D861E0 /* ApiConfig.plist */; };
+		81CC4AA261C863C500A5E5E3 /* libPods-WebAPITester.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF406A5164C0149E8F05C6DE /* libPods-WebAPITester.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17FF0F3BA8B27AE30D31A00B /* Pods-WebAPITester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebAPITester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebAPITester/Pods-WebAPITester.debug.xcconfig"; sourceTree = "<group>"; };
+		519A9DF61DC82E3200D861E0 /* WebAPITester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebAPITester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		519A9E031DC82E3200D861E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		519A9E051DC82E3200D861E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		519A9E081DC82E3200D861E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		519A9E101DC82FDA00D861E0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Supported/Info.plist; sourceTree = "<group>"; };
+		519A9E111DC82FDA00D861E0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Supported/main.m; sourceTree = "<group>"; };
+		519A9E151DC8301100D861E0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		519A9E161DC8301100D861E0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		519A9E181DC8301100D861E0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		519A9E191DC8301100D861E0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		519A9E1E1DC836D100D861E0 /* CCAccountAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAccountAPI.h; sourceTree = "<group>"; };
+		519A9E1F1DC836D100D861E0 /* CCAccountEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAccountEnum.h; sourceTree = "<group>"; };
+		519A9E201DC836D100D861E0 /* CCAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAccountManager.h; sourceTree = "<group>"; };
+		519A9E211DC836D100D861E0 /* CCAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAccountManager.m; sourceTree = "<group>"; };
+		519A9E221DC836D100D861E0 /* CCServerDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCServerDefine.h; sourceTree = "<group>"; };
+		519A9E231DC836D100D861E0 /* CCServerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCServerTool.h; sourceTree = "<group>"; };
+		519A9E241DC836D100D861E0 /* ConfigURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigURL.h; sourceTree = "<group>"; };
+		519A9E291DC8435400D861E0 /* encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encryption.h; sourceTree = "<group>"; };
+		519A9E2A1DC8435400D861E0 /* libencryption.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libencryption.a; sourceTree = "<group>"; };
+		519A9E2D1DC8474700D861E0 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
+		519A9E2E1DC8474700D861E0 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		519A9E301DC8687200D861E0 /* ApiConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiConfig.plist; sourceTree = "<group>"; };
+		AF75C99FD5F889C2E4444B8D /* Pods-WebAPITester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebAPITester.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebAPITester/Pods-WebAPITester.release.xcconfig"; sourceTree = "<group>"; };
+		CF406A5164C0149E8F05C6DE /* libPods-WebAPITester.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebAPITester.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		519A9DF31DC82E3200D861E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				519A9E2B1DC8435400D861E0 /* libencryption.a in Frameworks */,
+				81CC4AA261C863C500A5E5E3 /* libPods-WebAPITester.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		519A9DED1DC82E3200D861E0 = {
+			isa = PBXGroup;
+			children = (
+				519A9DF81DC82E3200D861E0 /* WebAPITester */,
+				519A9DF71DC82E3200D861E0 /* Products */,
+				7D2FA7253B76E1049B105EDD /* Pods */,
+				6F02ADEC02D6D8D7BADCAC9B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		519A9DF71DC82E3200D861E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				519A9DF61DC82E3200D861E0 /* WebAPITester.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		519A9DF81DC82E3200D861E0 /* WebAPITester */ = {
+			isa = PBXGroup;
+			children = (
+				519A9E261DC8435400D861E0 /* Libs */,
+				519A9E1D1DC835F700D861E0 /* Utils */,
+				519A9E141DC8301100D861E0 /* App */,
+				519A9E171DC8301100D861E0 /* Global */,
+				519A9DF91DC82E3200D861E0 /* Supporting Files */,
+				519A9E021DC82E3200D861E0 /* Main.storyboard */,
+				519A9E051DC82E3200D861E0 /* Assets.xcassets */,
+				519A9E071DC82E3200D861E0 /* LaunchScreen.storyboard */,
+			);
+			path = WebAPITester;
+			sourceTree = "<group>";
+		};
+		519A9DF91DC82E3200D861E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				519A9E101DC82FDA00D861E0 /* Info.plist */,
+				519A9E111DC82FDA00D861E0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		519A9E141DC8301100D861E0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				519A9E151DC8301100D861E0 /* ViewController.h */,
+				519A9E161DC8301100D861E0 /* ViewController.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		519A9E171DC8301100D861E0 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				519A9E181DC8301100D861E0 /* AppDelegate.h */,
+				519A9E191DC8301100D861E0 /* AppDelegate.m */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		519A9E1D1DC835F700D861E0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				519A9E1E1DC836D100D861E0 /* CCAccountAPI.h */,
+				519A9E241DC836D100D861E0 /* ConfigURL.h */,
+				519A9E231DC836D100D861E0 /* CCServerTool.h */,
+				519A9E1F1DC836D100D861E0 /* CCAccountEnum.h */,
+				519A9E221DC836D100D861E0 /* CCServerDefine.h */,
+				519A9E201DC836D100D861E0 /* CCAccountManager.h */,
+				519A9E211DC836D100D861E0 /* CCAccountManager.m */,
+				519A9E301DC8687200D861E0 /* ApiConfig.plist */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		519A9E261DC8435400D861E0 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				519A9E2C1DC8474700D861E0 /* OpenUUID */,
+				519A9E271DC8435400D861E0 /* libencryption */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		519A9E271DC8435400D861E0 /* libencryption */ = {
+			isa = PBXGroup;
+			children = (
+				519A9E281DC8435400D861E0 /* include */,
+				519A9E2A1DC8435400D861E0 /* libencryption.a */,
+			);
+			path = libencryption;
+			sourceTree = "<group>";
+		};
+		519A9E281DC8435400D861E0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				519A9E291DC8435400D861E0 /* encryption.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		519A9E2C1DC8474700D861E0 /* OpenUUID */ = {
+			isa = PBXGroup;
+			children = (
+				519A9E2D1DC8474700D861E0 /* OpenUDID.h */,
+				519A9E2E1DC8474700D861E0 /* OpenUDID.m */,
+			);
+			path = OpenUUID;
+			sourceTree = "<group>";
+		};
+		6F02ADEC02D6D8D7BADCAC9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF406A5164C0149E8F05C6DE /* libPods-WebAPITester.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D2FA7253B76E1049B105EDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17FF0F3BA8B27AE30D31A00B /* Pods-WebAPITester.debug.xcconfig */,
+				AF75C99FD5F889C2E4444B8D /* Pods-WebAPITester.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		519A9DF51DC82E3200D861E0 /* WebAPITester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 519A9E0D1DC82E3200D861E0 /* Build configuration list for PBXNativeTarget "WebAPITester" */;
+			buildPhases = (
+				10DF4AA5E0C7A0B893449A3C /* Check Pods Manifest.lock */,
+				519A9DF21DC82E3200D861E0 /* Sources */,
+				519A9DF31DC82E3200D861E0 /* Frameworks */,
+				519A9DF41DC82E3200D861E0 /* Resources */,
+				D12E1558E36EBC52611C75A4 /* Embed Pods Frameworks */,
+				0278B472DBE79C44BC1ADB0E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebAPITester;
+			productName = WebAPITester;
+			productReference = 519A9DF61DC82E3200D861E0 /* WebAPITester.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		519A9DEE1DC82E3200D861E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = wonder;
+				TargetAttributes = {
+					519A9DF51DC82E3200D861E0 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 519A9DF11DC82E3200D861E0 /* Build configuration list for PBXProject "WebAPITester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 519A9DED1DC82E3200D861E0;
+			productRefGroup = 519A9DF71DC82E3200D861E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				519A9DF51DC82E3200D861E0 /* WebAPITester */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		519A9DF41DC82E3200D861E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				519A9E311DC8687200D861E0 /* ApiConfig.plist in Resources */,
+				519A9E121DC82FDA00D861E0 /* Info.plist in Resources */,
+				519A9E091DC82E3200D861E0 /* LaunchScreen.storyboard in Resources */,
+				519A9E061DC82E3200D861E0 /* Assets.xcassets in Resources */,
+				519A9E041DC82E3200D861E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0278B472DBE79C44BC1ADB0E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebAPITester/Pods-WebAPITester-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10DF4AA5E0C7A0B893449A3C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D12E1558E36EBC52611C75A4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebAPITester/Pods-WebAPITester-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		519A9DF21DC82E3200D861E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				519A9E1A1DC8301100D861E0 /* ViewController.m in Sources */,
+				519A9E131DC82FDA00D861E0 /* main.m in Sources */,
+				519A9E1B1DC8301100D861E0 /* AppDelegate.m in Sources */,
+				519A9E251DC836D100D861E0 /* CCAccountManager.m in Sources */,
+				519A9E2F1DC8474700D861E0 /* OpenUDID.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		519A9E021DC82E3200D861E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				519A9E031DC82E3200D861E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		519A9E071DC82E3200D861E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				519A9E081DC82E3200D861E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		519A9E0B1DC82E3200D861E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		519A9E0C1DC82E3200D861E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		519A9E0E1DC82E3200D861E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FF0F3BA8B27AE30D31A00B /* Pods-WebAPITester.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/WebAPITester/Supported/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WebAPITester/Libs/libencryption",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cc.wonder.WebAPITester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		519A9E0F1DC82E3200D861E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF75C99FD5F889C2E4444B8D /* Pods-WebAPITester.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/WebAPITester/Supported/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WebAPITester/Libs/libencryption",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cc.wonder.WebAPITester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		519A9DF11DC82E3200D861E0 /* Build configuration list for PBXProject "WebAPITester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				519A9E0B1DC82E3200D861E0 /* Debug */,
+				519A9E0C1DC82E3200D861E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		519A9E0D1DC82E3200D861E0 /* Build configuration list for PBXNativeTarget "WebAPITester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				519A9E0E1DC82E3200D861E0 /* Debug */,
+				519A9E0F1DC82E3200D861E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 519A9DEE1DC82E3200D861E0 /* Project object */;
+}

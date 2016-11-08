@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>baseUrl</key>
+	<string>https://test.ydkjcp.com:8089</string>
+	<key>apis</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>request PIN 4 Phone</string>
+			<key>method</key>
+			<string>POST</string>
+			<key>url</key>
+			<string>/Auth/account/getAuthCode.do</string>
+			<key>params</key>
+			<dict>
+				<key>type</key>
+				<string>sms</string>
+				<key>reason</key>
+				<string>register</string>
+				<key>telnumber</key>
+				<string>15017583098</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>verify PIN for Phone</string>
+			<key>method</key>
+			<string>POST</string>
+			<key>url</key>
+			<string>verifyAuthCode.do</string>
+			<key>params</key>
+			<dict>
+				<key>telnumber</key>
+				<string>15017583098</string>
+				<key>authcode</key>
+				<string>1234</string>
+				<key>reason</key>
+				<string>register</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>sign up </string>
+			<key>method</key>
+			<string>POST</string>
+			<key>url</key>
+			<string>/Auth/account/doRegister.do</string>
+			<key>params</key>
+			<dict>
+				<key>telnumber</key>
+				<string>15017583098</string>
+				<key>pwd</key>
+				<string>12345678</string>
+				<key>code</key>
+				<string>123456</string>
+				<key>appkey</key>
+				<string>PinkmeBill</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>sign in</string>
+			<key>method</key>
+			<string>POST</string>
+			<key>url</key>
+			<string>/Auth/account/getAuthCode.do</string>
+			<key>params</key>
+			<dict>
+				<key>telnumber</key>
+				<string>15017583098</string>
+				<key>pwd</key>
+				<string>12345678</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

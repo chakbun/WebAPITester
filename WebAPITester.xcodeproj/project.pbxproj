@@ -18,6 +18,9 @@
 		519A9E2B1DC8435400D861E0 /* libencryption.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 519A9E2A1DC8435400D861E0 /* libencryption.a */; };
 		519A9E2F1DC8474700D861E0 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 519A9E2E1DC8474700D861E0 /* OpenUDID.m */; };
 		519A9E311DC8687200D861E0 /* ApiConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 519A9E301DC8687200D861E0 /* ApiConfig.plist */; };
+		519A9E351DD1B89D00D861E0 /* MBProgressHUD+JRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 519A9E341DD1B89D00D861E0 /* MBProgressHUD+JRAdditions.m */; };
+		519A9E381DD1BA9000D861E0 /* NSString+JRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 519A9E371DD1BA9000D861E0 /* NSString+JRAdditions.m */; };
+		519A9E3B1DD1C1E900D861E0 /* DetailRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 519A9E3A1DD1C1E900D861E0 /* DetailRequestController.m */; };
 		81CC4AA261C863C500A5E5E3 /* libPods-WebAPITester.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF406A5164C0149E8F05C6DE /* libPods-WebAPITester.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,12 @@
 		519A9E2D1DC8474700D861E0 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
 		519A9E2E1DC8474700D861E0 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
 		519A9E301DC8687200D861E0 /* ApiConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiConfig.plist; sourceTree = "<group>"; };
+		519A9E331DD1B89D00D861E0 /* MBProgressHUD+JRAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+JRAdditions.h"; sourceTree = "<group>"; };
+		519A9E341DD1B89D00D861E0 /* MBProgressHUD+JRAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+JRAdditions.m"; sourceTree = "<group>"; };
+		519A9E361DD1BA9000D861E0 /* NSString+JRAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JRAdditions.h"; sourceTree = "<group>"; };
+		519A9E371DD1BA9000D861E0 /* NSString+JRAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JRAdditions.m"; sourceTree = "<group>"; };
+		519A9E391DD1C1E900D861E0 /* DetailRequestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailRequestController.h; sourceTree = "<group>"; };
+		519A9E3A1DD1C1E900D861E0 /* DetailRequestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailRequestController.m; sourceTree = "<group>"; };
 		AF75C99FD5F889C2E4444B8D /* Pods-WebAPITester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebAPITester.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebAPITester/Pods-WebAPITester.release.xcconfig"; sourceTree = "<group>"; };
 		CF406A5164C0149E8F05C6DE /* libPods-WebAPITester.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebAPITester.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,6 +92,7 @@
 		519A9DF81DC82E3200D861E0 /* WebAPITester */ = {
 			isa = PBXGroup;
 			children = (
+				519A9E321DD1B89500D861E0 /* Category */,
 				519A9E261DC8435400D861E0 /* Libs */,
 				519A9E1D1DC835F700D861E0 /* Utils */,
 				519A9E141DC8301100D861E0 /* App */,
@@ -109,6 +119,8 @@
 			children = (
 				519A9E151DC8301100D861E0 /* ViewController.h */,
 				519A9E161DC8301100D861E0 /* ViewController.m */,
+				519A9E391DD1C1E900D861E0 /* DetailRequestController.h */,
+				519A9E3A1DD1C1E900D861E0 /* DetailRequestController.m */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -170,6 +182,17 @@
 				519A9E2E1DC8474700D861E0 /* OpenUDID.m */,
 			);
 			path = OpenUUID;
+			sourceTree = "<group>";
+		};
+		519A9E321DD1B89500D861E0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				519A9E331DD1B89D00D861E0 /* MBProgressHUD+JRAdditions.h */,
+				519A9E341DD1B89D00D861E0 /* MBProgressHUD+JRAdditions.m */,
+				519A9E361DD1BA9000D861E0 /* NSString+JRAdditions.h */,
+				519A9E371DD1BA9000D861E0 /* NSString+JRAdditions.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		6F02ADEC02D6D8D7BADCAC9B /* Frameworks */ = {
@@ -317,7 +340,10 @@
 				519A9E131DC82FDA00D861E0 /* main.m in Sources */,
 				519A9E1B1DC8301100D861E0 /* AppDelegate.m in Sources */,
 				519A9E251DC836D100D861E0 /* CCAccountManager.m in Sources */,
+				519A9E3B1DD1C1E900D861E0 /* DetailRequestController.m in Sources */,
 				519A9E2F1DC8474700D861E0 /* OpenUDID.m in Sources */,
+				519A9E351DD1B89D00D861E0 /* MBProgressHUD+JRAdditions.m in Sources */,
+				519A9E381DD1BA9000D861E0 /* NSString+JRAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

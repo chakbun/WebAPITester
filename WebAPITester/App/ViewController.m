@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "CCAccountManager.h"
+#import "MBProgressHUD+JRAdditions.h"
+#import "DetailRequestController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -51,6 +53,10 @@
 - (void)reTestButtonAction {
     [self.apiTestResult removeAllObjects];
     NSString *baseURL = self.apiPackages [@"baseUrl"]?:@"";
+    
+    dispatch_group_t apiRequestGroup = dispatch_group_create();
+    
+    [MBProgressHUD showLoadingAddedTo:self.view withText:@""];
     for(int i = 0; i < self.apis.count; i++) {
         NSDictionary *requestPackage = self.apis[i];
         NSDictionary *params = requestPackage[@"params"];
@@ -59,21 +65,45 @@
         if ([[method lowercaseString] isEqualToString:@"post"]) {
             __weak __typeof(self) weakSelf = self;
             
+            dispatch_group_enter(apiRequestGroup);
             [[CCAccountManager shareManager] postCCParams:params toURL:[baseURL stringByAppendingString:url] success:^(NSURLSessionDataTask *task, id responseObject) {
-                [weakSelf.apiTestResult setObject:@"YES" forKey:[NSString stringWithFormat:@"row_%i",(int)i]];
+                [weakSelf.apiTestResult setObject:@{@"state": @"YES",@"obj":responseObject} forKey:[NSString stringWithFormat:@"row_%i",(int)i]];
                 [weakSelf.apisTableView reloadData];
+                dispatch_group_leave(apiRequestGroup);
             } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                [weakSelf.apiTestResult setObject:@"NO" forKey:[NSString stringWithFormat:@"row_%i",(int)i]];
+                [weakSelf.apiTestResult setObject:@{@"state": @"NO",@"err":error} forKey:[NSString stringWithFormat:@"row_%i",(int)i]];
                 [weakSelf.apisTableView reloadData];
+                dispatch_group_leave(apiRequestGroup);
             }];
+            
         }else {
             
         }
+    }
+    
+    __weak __typeof(self) weakSelf = self;
+
+    dispatch_group_notify(apiRequestGroup, dispatch_get_main_queue(), ^{
+        [MBProgressHUD hideAllHUDsForView:weakSelf.view animated:YES];
+    });
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"toDetailSegue"]) {
+        DetailRequestController *controller = segue.destinationViewController;
+        NSIndexPath *selectedIndexPath = sender;
+        NSDictionary *requestPackage = self.apis[selectedIndexPath.row];
+        NSDictionary *responsecePackage = self.apiTestResult[[NSString stringWithFormat:@"row_%i",(int)selectedIndexPath.row]];
+        controller.testPackage = @{@"request":requestPackage, @"response":responsecePackage};
     }
 }
 
 
 #pragma mark - TabelView DataSource
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"toDetailSegue" sender:indexPath];
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.apis.count;
@@ -87,7 +117,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CELL_ID_4_REUSE];
     }
-    NSString *resultFlag = self.apiTestResult[[NSString stringWithFormat:@"row_%i",(int)indexPath.row]];
+    NSString *resultFlag = self.apiTestResult[[NSString stringWithFormat:@"row_%i",(int)indexPath.row]][@"state"];
     if (resultFlag) {
         if ([resultFlag boolValue]) {
             cell.accessoryType = UITableViewCellAccessoryCheckmark;

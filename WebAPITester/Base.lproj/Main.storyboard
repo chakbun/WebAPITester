@@ -37,11 +37,46 @@
                     <navigationItem key="navigationItem" id="4em-48-ua3"/>
                     <connections>
                         <outlet property="apisTableView" destination="WyG-RY-5sw" id="1u4-l9-hhr"/>
+                        <segue destination="SZ6-NI-VYY" kind="show" identifier="toDetailSegue" id="Sqc-YA-oc1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-415" y="179"/>
+            <point key="canvasLocation" x="-588" y="179"/>
+        </scene>
+        <!--Detail Request Controller-->
+        <scene sceneID="azf-38-Zah">
+            <objects>
+                <viewController id="SZ6-NI-VYY" customClass="DetailRequestController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EOC-i0-nRR"/>
+                        <viewControllerLayoutGuide type="bottom" id="RVc-fB-NVZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BuM-Uj-BR6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dNz-3y-ezK">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RVc-fB-NVZ" firstAttribute="top" secondItem="dNz-3y-ezK" secondAttribute="bottom" constant="20" id="1yh-hq-4I9"/>
+                            <constraint firstAttribute="trailing" secondItem="dNz-3y-ezK" secondAttribute="trailing" id="Lu2-VB-nvO"/>
+                            <constraint firstItem="dNz-3y-ezK" firstAttribute="top" secondItem="EOC-i0-nRR" secondAttribute="bottom" constant="20" id="PhP-5y-ga7"/>
+                            <constraint firstItem="dNz-3y-ezK" firstAttribute="leading" secondItem="BuM-Uj-BR6" secondAttribute="leading" id="fCn-sZ-S8c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="consoleTextView" destination="dNz-3y-ezK" id="Buw-Kb-1dj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xkw-aL-hCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="173"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WM8-90-2TC">
@@ -57,7 +92,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPF-2I-1EB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1282" y="179"/>
+            <point key="canvasLocation" x="-1329" y="179"/>
         </scene>
     </scenes>
 </document>

@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) NSDictionary *testPackage;
 
+@property (nonatomic, strong) NSString *baseURL;
+
 @end

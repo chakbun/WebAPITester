@@ -44,6 +44,8 @@
     
     UIBarButtonItem *reTestBarItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(reTestButtonAction)];
     self.navigationItem.rightBarButtonItem = reTestBarItem;
+    
+    self.apisTableView.tableFooterView = [UIView new];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -95,6 +97,9 @@
         NSDictionary *requestPackage = self.apis[selectedIndexPath.row];
         NSDictionary *responsecePackage = self.apiTestResult[[NSString stringWithFormat:@"row_%i",(int)selectedIndexPath.row]];
         controller.testPackage = @{@"request":requestPackage, @"response":responsecePackage};
+        NSString *baseURL = self.apiPackages [@"baseUrl"]?:@"";
+
+        controller.baseURL = baseURL;
     }
 }
 
